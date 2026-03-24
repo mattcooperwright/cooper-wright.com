@@ -59,8 +59,8 @@ export default function App() {
 
       {/* Main content - business card layout */}
       <div className="relative z-10 flex items-center justify-start h-full px-16 md:px-24 lg:px-32">
-        <div className="max-w-3xl">
-          <h1 className="text-[clamp(3rem,8vw,8rem)] leading-[0.95] tracking-tight mb-8" style={{ fontWeight: 400 }}>
+        <div className="max-w-4xl">
+          <h1 className="text-[clamp(2.5rem,7vw,7rem)] leading-[1] tracking-tight mb-8 whitespace-nowrap" style={{ fontWeight: 400 }}>
             Matt Cooper-Wright
           </h1>
           <div className="text-[clamp(1.2rem,2.5vw,2.5rem)] leading-tight tracking-wide mb-2" style={{ fontWeight: 400 }}>
