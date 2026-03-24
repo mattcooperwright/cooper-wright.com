@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { GeometricShape } from './components/GeometricShape';
+import { Menu } from './components/Menu';
 
 interface Shape {
   id: number;
@@ -71,6 +72,9 @@ export default function App() {
           </div>
         </div>
       </div>
+
+      {/* Menu */}
+      <Menu />
     </div>
   );
 }
