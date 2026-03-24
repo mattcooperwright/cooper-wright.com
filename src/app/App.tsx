@@ -1,6 +1,11 @@
+import { BrowserRouter, Routes, Route } from 'react-router';
 import { useEffect, useState } from 'react';
 import { GeometricShape } from './components/GeometricShape';
 import { Menu } from './components/Menu';
+
+// --- IMPORT YOUR FIGMA PAGE HERE ---
+// Make sure the path matches your actual file location
+import YourFigmaPage from './pages/YourFigmaPage'; 
 
 interface Shape {
   id: number;
@@ -13,21 +18,24 @@ interface Shape {
 }
 
 const COLORS = [
-  '#FF6B35',  // Coral
-  '#004E89',  // Deep blue
-  '#F7B801',  // Golden yellow
-  '#1A535C',  // Dark teal
-  '#FF0054',  // Hot pink
-  '#6A4C93',  // Purple
+  '#FF6B35', // Coral
+  '#004E89', // Deep blue
+  '#F7B801', // Golden yellow
+  '#1A535C', // Dark teal
+  '#FF0054', // Hot pink
+  '#6A4C93', // Purple
 ];
 
-export default function App() {
+/**
+ * The original design moved into a sub-component
+ * so it only shows up on the "/" path.
+ */
+function HomePage() {
   const [shapes, setShapes] = useState<Shape[]>([]);
 
   useEffect(() => {
-    // Generate random shapes on mount
     const generateShapes = () => {
-      const numberOfShapes = Math.floor(Math.random() * 5) + 6; // 6-10 shapes
+      const numberOfShapes = Math.floor(Math.random() * 5) + 6;
       const newShapes: Shape[] = [];
 
       for (let i = 0; i < numberOfShapes; i++) {
@@ -37,12 +45,11 @@ export default function App() {
           type: types[Math.floor(Math.random() * types.length)],
           x: Math.random() * 100,
           y: Math.random() * 100,
-          size: Math.random() * 500 + 300, // 300-800px - MUCH bigger
+          size: Math.random() * 500 + 300,
           rotation: Math.random() * 360,
           color: COLORS[Math.floor(Math.random() * COLORS.length)],
         });
       }
-
       setShapes(newShapes);
     };
 
@@ -73,8 +80,27 @@ export default function App() {
         </div>
       </div>
 
-      {/* Menu */}
+      {/* Menu - Shared across the home page */}
       <Menu />
     </div>
   );
 }
+
+/**
+ * The Main App component handling the Routing logic
+ */
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        {/* The main landing page */}
+        <Route path="/" element={<HomePage />} />
+
+        {/* The new page from Figma */}
+        {/* Change "/new-page" to whatever URL you want (e.g., "/work" or "/about") */}
+        <Route path="/new-page" element={<YourFigmaPage />} />
+
+        {/* Optional: Add a 404 catch-all that sends people back home */}
+        <Route path="*" element={<HomePage />} />
+      </Routes>
+    </BrowserRouter>
