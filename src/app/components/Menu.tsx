@@ -19,7 +19,7 @@ export function Menu() {
   }, []);
 
   const menuItems = [
-    { label: 'Sitting in a Room', href: '/sitting-in-a-room/index.html' },
+    { label: 'Sitting in a Room', href: '/sitting-in-a-room' },
     { label: 'More', href: '/' },
     { label: 'Stuff soon', href: '/contact.html' },
   ];
