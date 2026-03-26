@@ -2,10 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router';
 import { useEffect, useState } from 'react';
 import { GeometricShape } from './components/GeometricShape';
 import { Menu } from './components/Menu';
-
-// --- IMPORT YOUR FIGMA PAGE HERE ---
-// Make sure the path matches your actual file location
-import YourFigmaPage from './pages/YourFigmaPage'; 
+import { IAmSittingInARoom } from './pages/IAmSittingInARoom';
 
 interface Shape {
   id: number;
@@ -96,11 +93,12 @@ export default function App() {
         {/* The main landing page */}
         <Route path="/" element={<HomePage />} />
 
-        {/* The new page from Figma */}
-        {/* Change "/new-page" to whatever URL you want (e.g., "/work" or "/about") */}
-        <Route path="/new-page" element={<YourFigmaPage />} />
+        {/* Sitting in a Room – integrated from subfolder */}
+        <Route path="/sitting-in-a-room" element={<IAmSittingInARoom />} />
 
-        {/* Optional: Add a 404 catch-all that sends people back home */}
+        {/* 404 catch-all */}
         <Route path="*" element={<HomePage />} />
       </Routes>
     </BrowserRouter>
+  );
+}
