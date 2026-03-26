@@ -15,12 +15,12 @@ interface Shape {
 }
 
 const COLORS = [
-  '#FF6B35', // Coral
-  '#004E89', // Deep blue
-  '#F7B801', // Golden yellow
-  '#1A535C', // Dark teal
-  '#FF0054', // Hot pink
-  '#6A4C93', // Purple
+  '#262626', // Carbon Black
+  '#ACBFA4', // Ash Grey
+  '#E2E8CE', // Beighe
+  '#FF7F11', // Tangerine
+  '#FF1B1C', // Red
+  '#8DDBE0', // Blueish
 ];
 
 /**
