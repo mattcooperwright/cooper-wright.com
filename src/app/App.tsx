@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { GeometricShape } from './components/GeometricShape';
 import { Menu } from './components/Menu';
 import { IAmSittingInARoom } from './pages/IAmSittingInARoom';
+import '../styles/home-page.css';
 
 interface Shape {
   id: number;
@@ -54,7 +55,7 @@ function HomePage() {
   }, []);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden bg-white">
+    <div className="home-page relative w-full h-screen overflow-hidden bg-white">
       {/* Background shapes */}
       <div className="absolute inset-0">
         {shapes.map((shape) => (
@@ -65,13 +66,13 @@ function HomePage() {
       {/* Main content - business card layout */}
       <div className="relative z-10 flex items-center justify-start h-full px-16 md:px-24 lg:px-32">
         <div className="max-w-4xl">
-          <h1 className="text-[clamp(2.5rem,7vw,7rem)] leading-[1] tracking-tight mb-8 whitespace-nowrap" style={{ fontWeight: 400 }}>
+          <h1 className="text-[clamp(2.5rem,7vw,7rem)] leading-[1] tracking-tight mb-8 whitespace-nowrap">
             Matt Cooper-Wright
           </h1>
-          <div className="text-[clamp(1.2rem,2.5vw,2.5rem)] leading-tight tracking-wide mb-2" style={{ fontWeight: 400 }}>
+          <div className="text-[clamp(1.2rem,2.5vw,2.5rem)] leading-tight tracking-wide mb-2">
             Executive Design Director
           </div>
-          <div className="text-[clamp(1.2rem,2.5vw,2.5rem)] leading-tight tracking-wide" style={{ fontWeight: 400 }}>
+          <div className="text-[clamp(1.2rem,2.5vw,2.5rem)] leading-tight tracking-wide">
             IDEO
           </div>
         </div>
