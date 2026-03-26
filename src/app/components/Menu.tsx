@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router';
 
 export function Menu() {
   const [bgColor, setBgColor] = useState('');
@@ -19,9 +20,9 @@ export function Menu() {
   }, []);
 
   const menuItems = [
-    { label: 'Sitting in a Room', href: '/sitting-in-a-room' },
-    { label: 'More', href: '/' },
-    { label: 'Stuff soon', href: '/contact.html' },
+    { label: 'Sitting in a Room', to: '/sitting-in-a-room' },
+    { label: 'More', to: '/' },
+    { label: 'Stuff soon', to: '/contact.html' },
   ];
 
   return (
@@ -33,13 +34,13 @@ export function Menu() {
         <ul className="space-y-6">
           {menuItems.map((item) => (
             <li key={item.label}>
-              <a
-                href={item.href}
+              <Link
+                to={item.to}
                 className="text-white text-2xl block hover:opacity-70 transition-opacity"
                 style={{ fontWeight: 400 }}
               >
                 {item.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
