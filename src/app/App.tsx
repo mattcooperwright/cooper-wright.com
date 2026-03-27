@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { GeometricShape } from './components/GeometricShape';
 import { Menu } from './components/Menu';
 import { IAmSittingInARoom } from './pages/IAmSittingInARoom';
+import { MakingIsThinking } from './pages/MakingIsThinking';
 import '../styles/home-page.css';
 
 interface Shape {
@@ -96,6 +97,9 @@ export default function App() {
 
         {/* Sitting in a Room – integrated from subfolder */}
         <Route path="/sitting-in-a-room" element={<IAmSittingInARoom />} />
+
+        {/* Making is Thinking – integrated from subfolder */}
+        <Route path="/making-is-thinking" element={<MakingIsThinking />} />
 
         {/* 404 catch-all */}
         <Route path="*" element={<HomePage />} />

@@ -21,6 +21,7 @@ export function Menu() {
 
   const menuItems = [
     { label: 'Sitting in a Room', to: '/sitting-in-a-room' },
+    { label: 'Making is Thinking', to: '/making-is-thinking' },
     { label: 'More', to: '/' },
     { label: 'Stuff soon', to: '/contact.html' },
   ];
