@@ -422,13 +422,13 @@ export function MakingIsThinking() {
             className="text-sm md:text-base lg:text-lg leading-relaxed mb-16"
             style={{ color: BG, opacity: 0.55 }}
           >
-            I'm aware this piece is arguing for the importance of making — and I've written it entirely in words. And I used AI tools to help me shape and delvier the content. I say this to empahsise that using AI is not the problem, its the moment when you skip making altogether. As I began writing, and building I didn't start with the argument fully formed. I started with a feeling that something important was shifting, and the writing has been how I've figured out what I actually think about it. 
+            I used AI tools to help me shape and delvier the content. I say this to empahsise that using AI is not the problem. The problem is when you skip making altogether and jump from prompt to article. As I began writing, and building the page, the argument wasn't fully formed. I started with a feeling that something important was shifting, and the writing has been how I've figured out what I actually think about it. 
           </p>
           <p
             className="text-sm md:text-base lg:text-lg leading-relaxed mb-16"
             style={{ color: BG, opacity: 0.55 }}
           >
-            I didn't wait until the thinking was done before starting to build.
+            Building this page was the next stage of thinking needed to shape the idea.
           </p>
 
           {/* THE closing line — massive, white */}
@@ -438,6 +438,12 @@ export function MakingIsThinking() {
           >
             Which is, I suppose, the point.
           </h1>
+          <p
+            className="text-sm md:text-base lg:text-lg leading-relaxed mb-16"
+            style={{ color: BG, opacity: 0.55 }}
+          >
+            Post Script: I'm also hoping that the debate that follows will move my thinking on even further.
+          </p>
         </div>
       </section>
     </div>
