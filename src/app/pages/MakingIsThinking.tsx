@@ -410,6 +410,7 @@ export function MakingIsThinking() {
           >
             Which is, I suppose, the point.
           </h1>
+          <p>...</p>
           <p
             className="text-sm md:text-base lg:text-lg leading-relaxed mb-16"
             style={{ color: BG, opacity: 0.55 }}
