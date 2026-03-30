@@ -148,7 +148,7 @@ export function MakingIsThinking() {
             Every project I've worked on at IDEO has a moment. Discussion is spiralling, we're overloaded with inputs and we're stressed about making sense of everything. The instinct is often to keep talking. But the next stage of thinking is only unlcoked by making.
           </p>
           <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-8" style={{ color: FG }}>
-            Within an hour, the team has leapt forward. Not because people suddenly have new ideas, but because the act of making has forced their existing ideas into contact with reality. Constraints surface. Trade-offs become visible. Disagreements suddendly look like multiple perspectives on the same thing.
+            After picking up tools, and attempting to build (usually within an hour), the team has leapt forward. Not because people suddenly have new ideas, but because the act of making has forced their existing ideas into contact with reality. Constraints surface. Trade-offs become visible. Disagreements suddendly look like multiple perspectives on the same thing.
           </p>
         </div>
         <Glyph className="right-[-5%] top-[10%] text-[50vw] opacity-[0.09] rotate-[25deg]">&amp;</Glyph>
@@ -158,7 +158,7 @@ export function MakingIsThinking() {
       {/* ─── Pull quote 1 ─────────────────────────────────────────────────── */}
       <section className="py-32 md:py-48 px-6 md:px-12 lg:px-24 relative">
         <div className="max-w-6xl relative z-10">
-          <p className="text-[12vw] md:text-[10vw] lg:text-[8rem] leading-[0.95] tracking-tighter" style={{ ...gasoek, color: FG }}>
+          <p className="text-[12vw] md:text-[10vw] lg:text-[8rem] leading-[0.95] tracking-tighter-old-old" style={{ ...gasoek, color: FG }}>
             Prototypes aren't outputs. They're thinking tools.
           </p>
         </div>
@@ -169,7 +169,7 @@ export function MakingIsThinking() {
       {/* ─── The Wrong Assumption ─────────────────────────────────────────── */}
       <section className="py-24 md:py-32 px-6 md:px-12 lg:px-24 relative">
         <div className="max-w-3xl">
-          <h3 className="text-6xl md:text-8xl lg:text-[10rem] mb-12 leading-[0.9] tracking-tighter" style={{ ...gasoek, color: FG }}>
+          <h3 className="text-6xl md:text-8xl lg:text-[10rem] mb-12 leading-[0.9] tracking-tighter-old" style={{ ...gasoek, color: FG }}>
             The wrong assumption
           </h3>
           <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-8" style={{ color: FG }}>
@@ -179,7 +179,7 @@ export function MakingIsThinking() {
             But all creatives know that your thinking continues as you make.
           </p>
           <p className="text-sm md:text-base lg:text-lg leading-relaxed" style={{ color: FG }}>
-            This is hard earned knowledge, creative know it but as we collaborate with more and more mixed teams it needs to be addressed. <b>When we start to use AI tools to do the mking, we have a real problem on our hands.</b> When making took time and effort, the thinking happened inside it whether you intended it to or not. You couldn't avoid learning as you built, because building was slow and resistant and full of friction.
+            This is hard earned knowledge, creatives everywhere know it. But as we start to use AI tools to do the making, we have a <b>real problem on our hands.</b> IN the past, when making took time and effort, the thinking happened inside it whether you intended it to or not. You couldn't avoid learning as you built, because building was slow and resistant and full of friction.
           </p>
         </div>
         <Glyph className="left-[-12%] top-[25%] text-[52vw] opacity-[0.08] rotate-[45deg]">#</Glyph>
@@ -190,14 +190,14 @@ export function MakingIsThinking() {
       {/* ─── The Messy Middle ─────────────────────────────────────────────── */}
       <section className="py-24 md:py-32 px-6 md:px-12 lg:px-24 relative">
         <div className="max-w-3xl">
-          <h1 className="text-6xl md:text-8xl lg:text-[10rem] mb-12 leading-[0.9] tracking-tighter" style={{ ...gasoek, color: FG }}>
+          <h1 className="text-6xl md:text-8xl lg:text-[10rem] mb-12 leading-[0.9] tracking-tighter-old" style={{ ...gasoek, color: FG }}>
             The messy middle
           </h1>
           <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-8" style={{ color: FG }}>
             AI tools — things I'm using constantly, things i'm building with, and prototyping with — have collapsed the distance between idea and output. You can move from a half-formed thought to a polished artefact in seconds. Tools like Claude don't just generate outputs from prompts — they reason through the detail for you, filling in the gaps between your intention and the finished thing.
           </p>
           <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-8" style={{ color: FG }}>
-            This is genuinely useful. I've built research tools, analysis frameworks, working prototypes in hours that would have taken weeks. The speed is not the problem.
+            This is genuinely useful. I've built research tools, analysis frameworks, working prototypes in hours that would have taken weeks. The <b>speed</b> is not the problem.
           </p>
           <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-12 italic" style={{ color: FG }}>
             The problem is what gets skipped.
@@ -206,16 +206,10 @@ export function MakingIsThinking() {
         <Glyph className="right-[-10%] top-[-5%] text-[58vw] opacity-[0.09] rotate-[-20deg]">~</Glyph>
         <Glyph className="left-[50%] bottom-[-15%] text-[50vw] opacity-[0.07]">%</Glyph>
         <Glyph className="top-[50%] left-[-5%] text-[40vw] opacity-[0.10] rotate-[15deg]">+</Glyph>
-      </section>
 
-      {/* ─── Pull quote 2 ─────────────────────────────────────────────────── */}
-      <section className="py-32 md:py-48 px-6 md:px-12 lg:px-24 relative">
         <div className="max-w-6xl relative z-10">
-          <p className="text-[10vw] md:text-[8vw] lg:text-[7rem] leading-[1.0] tracking-tighter" style={{ ...gasoek, color: FG }}>
-            That middle bit—the messy, frustrating, iterative process of making—this is where most of the actual thinking happens. It's not a cost to be optimised away.
-          </p>
-          <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-8" style={{ color: FG }}>
-            It's the whole point.
+          <p className="text-[10vw] md:text-[8vw] lg:text-[7rem] leading-[1.0] tracking-tighter-old" style={{ ...gasoek, color: FG }}>
+            That middle bit. The messy, frustrating, iterative process of making. This is where most of the actual thinking happens. It's not a cost to be optimised away. <b>It's the whole point</b>.
           </p>
         </div>
         <Glyph className="top-[10%] right-[-8%] text-[65vw] opacity-[0.07]">(</Glyph>
@@ -226,17 +220,20 @@ export function MakingIsThinking() {
       {/* ─── Tangible Thought ─────────────────────────────────────────────── */}
       <section className="py-24 md:py-32 px-6 md:px-12 lg:px-24 relative">
         <div className="max-w-3xl">
-          <h2 className="text-6xl md:text-8xl lg:text-[10rem] mb-12 leading-[0.9] tracking-tighter" style={{ ...gasoek, color: FG }}>
+          <h2 className="text-6xl md:text-8xl lg:text-[10rem] mb-12 leading-[0.9] tracking-tighter-old" style={{ ...gasoek, color: FG }}>
             Tangible thought
           </h2>
           <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-8" style={{ color: FG }}>
             What do I actually mean by making?
           </p>
           <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-8" style={{ color: FG }}>
-            I mean the act of a person using skills and craft and technique to build something — however rough — that externalises their thinking. At IDEO, we have teams of people with deep technical skills across a range of disciplines. When they're faced with a problem, they don't <b>talk</b> about the solution, they pick up the tools of their trade and begin <b>building</b> things. And in the act of making, they deepen their understanding of the problem in ways that conversation alone never achieves.
+            I mean the act of a person using skills and craft and technique to build something. Something that externalises their thinking. At IDEO, we have teams of people with deep technical skills across a range of disciplines. When they're faced with a problem, they don't <b>talk</b> about the solution, they pick up the tools of their trade and begin <b>building</b> things. And in the act of making, they deepen their understanding of the problem in ways that conversation alone never achieves.
           </p>
           <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-8" style={{ color: FG }}>
-            In our work, this happens from the very earliest stages — not just when a direction has been chosen, but when the team is still trying to figure out what the problem actually is. Making is how you define the problem, not just how you solve it.
+            Making is Thinking.
+          </p>
+          <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-8" style={{ color: FG }}>
+            In design, this happens from the very earliest stages, ot just when a direction has been chosen, but when the team is still trying to figure out what the problem actually is. Making is how you define the problem, not just how you solve it.
           </p>
         </div>
         <Glyph className="left-[-15%] top-[5%] text-[60vw] opacity-[0.08] rotate-[30deg]">?</Glyph>
@@ -244,44 +241,23 @@ export function MakingIsThinking() {
         <Glyph className="top-[60%] right-[25%] text-[42vw] opacity-[0.07]">:</Glyph>
       </section>
 
-      {/* ─── A Borrowed Frame ─────────────────────────────────────────────── */}
-      <section className="py-24 md:py-32 px-6 md:px-12 lg:px-24 relative">
-        <div className="max-w-3xl">
-          <h3 className="text-6xl md:text-8xl lg:text-[10rem] mb-12 leading-[0.9] tracking-tighter" style={{ ...gasoek, color: FG }}>
-            A borrowed frame
-          </h3>
-          <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-8" style={{ color: FG }}>
-            The composer Alvin Lucier made a piece in 1969 called <em>I Am Sitting in a Room</em>. He recorded himself speaking, then played the recording back into the room and re-recorded it. Again and again. Each iteration, the room's resonant frequencies amplified and the original speech degraded, until all that remained was the acoustic signature of the space itself. The human voice — gone.
-          </p>
-          <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-8" style={{ color: FG }}>
-            I think about this when I think about AI and making. Each time you remove a layer of human friction from the creative process — each time you skip the making and go straight to the output — you lose some of the texture that came from the encounter between the person and the material. Do it enough times and you're left with something smooth and fluent that has lost the shape of the thinking that should have produced it.
-          </p>
-          <p className="text-sm md:text-base lg:text-lg leading-relaxed italic" style={{ color: FG }}>
-            The output looks OK. But it's not got the texture of process. But do you really understand what you've built?
-          </p>
-        </div>
-        <Glyph className="right-[-10%] top-[15%] text-[55vw] opacity-[0.09] rotate-[12deg]">~</Glyph>
-        <Glyph className="left-[-8%] bottom-[20%] text-[50vw] opacity-[0.07]">^</Glyph>
-        <Glyph className="top-[-5%] left-[40%] text-[48vw] opacity-[0.07] rotate-[-18deg]">\</Glyph>
-      </section>
-
       {/* ─── Flora ────────────────────────────────────────────────────────── */}
       <section className="py-24 md:py-32 px-6 md:px-12 lg:px-24 relative">
         <div className="max-w-3xl">
-          <h2 className="text-6xl md:text-8xl lg:text-[10rem] mb-12 leading-[0.9] tracking-tighter" style={{ ...gasoek, color: FG }}>
-            Flora
+          <h2 className="text-6xl md:text-8xl lg:text-[10rem] mb-12 leading-[0.9] tracking-tighter-old" style={{ ...gasoek, color: FG }}>
+            Embracing a new tool called Flora. Yes it AI, but the collaborative nature encouraged thinking and collaboration.
           </h2>
           <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-8" style={{ color: FG }}>
-            A recent example. A team working on the future of commercial vehicles was thinking about new in-vehicle experiences — 3D concepts, spatial interfaces, physical-digital interactions. They used an AI tool called Flora.ai to rapidly generate and manipulate concepts together. They recreated images that looked like £d renders, but were created through AI image generation.
+            A recent example. A team working on the future of commercial vehicles was thinking about new in-vehicle experiences: 3D concepts, spatial interfaces, physical-digital interactions. They used an AI tool called Flora.ai to rapidly generate and manipulate concepts together. They recreated images that looked like 3D renders, but were created through AI image generation. <a hre="https://medium.com/front-line-interaction-design/intermediate-impossibles-d02f26bd9a74">Intermediate Impossibles</a> tooks is in unpredicatable but highly valuable directions.
           </p>
           <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-8" style={{ color: FG }}>
             The thing that struck me: the value didn't come from the outputs themselves. It came from the act of <b>making together</b>. As they built, shared, and shaped ideas in real time, the conversation flowed freely. Unexpected details surfaced. One person's partial idea became another's starting point. The work evolved through interaction with the tool, with each other, and with the emerging artefacts.
           </p>
           <p className="text-sm md:text-base lg:text-lg leading-relaxed" style={{ color: FG }}>
-            But — and this is the crucial bit — multiple members of that team had deep experience in Industrial Design. They knew how to do it the hard way. They understood form, proportion, material. They were using an image generation tool with 3D renders as input, not a 3D tool directly, but their craft instincts shaped every prompt, every reaction, every decision about what to keep and what to push further.
+            But (and this is the crucial bit) multiple members of that team had deep experience in Industrial Design. They knew how to do it the hard way. They understood form, proportion, material. They were using an image generation tool with 3D renders as input, not a 3D tool directly, but their craft instincts shaped every prompt, every reaction, every decision about what to keep and what to push further.
           </p>
           <p className="text-sm md:text-base lg:text-lg leading-relaxed" style={{ color: FG }}>
-            This was right for the strategic stage of the process, deep INdistrual Design Skills will be needed in the next round. But even with tools to automate process, the act of making was where deeper thinking happened.
+            This was right for the strategic stage of the process, deep Industrial Design Skills would have slowed down the fast process of ideation, and certainly the deep skills will be needed in the next round. But even with tools to automate process, the act of making was where breakthrough ideas happened.
           </p>
         </div>
         <Glyph className="right-[-12%] top-[-10%] text-[62vw] opacity-[0.08] rotate-[22deg]">$</Glyph>
@@ -292,9 +268,9 @@ export function MakingIsThinking() {
       {/* ─── Pull quote 3 ─────────────────────────────────────────────────── */}
       <section className="py-32 md:py-48 px-6 md:px-12 lg:px-24 relative">
         <div className="max-w-6xl relative z-10">
-          <p className="text-[12vw] md:text-[10vw] lg:text-[8rem] leading-[0.95] tracking-tighter" style={{ ...gasoek, color: FG }}>
-            Making forces precision. It forces choices.
-          </p>
+          <h2 className="text-[12vw] md:text-[10vw] lg:text-[8rem] leading-[0.95] tracking-tighter-old" style={{ ...gasoek, color: FG }}>
+            Making forces choices.
+          </h2>
         </div>
         <Glyph className="right-[-8%] bottom-[-15%] text-[68vw] opacity-[0.07] rotate-[-25deg]">!</Glyph>
         <Glyph className="left-[-5%] top-[10%] text-[55vw] opacity-[0.09]">]</Glyph>
@@ -304,9 +280,7 @@ export function MakingIsThinking() {
       {/* ─── The Risk Underneath ──────────────────────────────────────────── */}
       <section className="py-24 md:py-32 px-6 md:px-12 lg:px-24 relative">
         <div className="max-w-3xl">
-          <h1 className="text-6xl md:text-8xl lg:text-[10rem] mb-12 leading-[0.9] tracking-tighter" style={{ ...gasoek, color: FG }}>
-            The risk underneath
-          </h1>
+          
           <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-8" style={{ color: FG }}>
             I fear for the future of creativity.
           </p>
@@ -317,7 +291,7 @@ export function MakingIsThinking() {
             AI systems are built on past work created by skilled practitioners. People who spent years learning materials, tools, constraints, affordances. If new generations skip the making because AI handles it, that foundation weakens. Not the AI outputs — those might stay good for a while, drawing on the existing corpus. But the human capacity to judge, to iterate, to know <em>why</em> something works and how to push it further — that erodes.
           </p>
           <p className="text-sm md:text-base lg:text-lg leading-relaxed italic" style={{ color: FG }}>
-            The risk isn't just shallower outputs in the short term. It's a gradual narrowing of how we think. As we outsource thinking to AI, we become reliant on its presence in the future - and these tools are commercial products propped up by venture capital. Burning through credits on the promise of stability in the future. What if that doesn't come? Or worse, its only available to those who can afford it?
+            The risk isn't just shallower outputs in the short term. It's a gradual narrowing of how we think. As we outsource thinking to AI today, we become reliant on its presence tomorrow - and these tools are commercial products propped up by venture capital. Burning through credits on the promise of stability in the future. What if that doesn't come? Or worse, its only available to those who can afford it? We will have outsourced our thinking to companies that crash.
           </p>
         </div>
         <Glyph className="left-[-8%] top-[30%] text-[60vw] opacity-[0.08] rotate-[15deg]">{'}'}</Glyph>
@@ -329,12 +303,12 @@ export function MakingIsThinking() {
       {/* ─── Pull quote 4 ─────────────────────────────────────────────────── */}
       <section className="py-32 md:py-48 px-6 md:px-12 lg:px-24 relative">
         <div className="max-w-6xl relative z-10">
-          <p className="text-[12vw] md:text-[10vw] lg:text-[8rem] leading-[0.95] tracking-tighter" style={{ ...gasoek, color: FG }}>
+          <h2 className="text-[12vw] md:text-[10vw] lg:text-[8rem] leading-[0.95] tracking-tighter-old" style={{ ...gasoek, color: FG }}>
             Making is not an output.
-          </p>
-          <p className="text-[12vw] md:text-[10vw] lg:text-[8rem] leading-[0.95] tracking-tighter mt-8" style={{ ...gasoek, color: FG }}>
+          </h2>
+          <h2 className="text-[12vw] md:text-[10vw] lg:text-[8rem] leading-[0.95] tracking-tighter-old mt-8" style={{ ...gasoek, color: FG }}>
             Making is an input to further thought.
-          </p>
+          </h2>
         </div>
         <Glyph className="right-[-10%] top-[20%] text-[62vw] opacity-[0.09] rotate-[10deg]">→</Glyph>
         <Glyph className="left-[-12%] bottom-[-10%] text-[58vw] opacity-[0.07] rotate-[-20deg]">←</Glyph>
@@ -344,20 +318,18 @@ export function MakingIsThinking() {
       {/* ─── Making as Input ──────────────────────────────────────────────── */}
       <section className="py-24 md:py-32 px-6 md:px-12 lg:px-24 relative">
         <div className="max-w-3xl">
-          <h3 className="text-6xl md:text-8xl lg:text-[10rem] mb-12 leading-[0.9] tracking-tighter" style={{ ...gasoek, color: FG }}>
-            Making as input
-          </h3>
+          
           <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-8" style={{ color: FG }}>
             One of the most important reframes is this: making is not an output. Making is an input to further thought.
           </p>
           <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-8" style={{ color: FG }}>
-            A rough prototype, a sketch, a model, a simple artefact — these aren't deliverables. They're thinking devices. They allow others to engage. They surface insight faster than conversation. They create shared understanding.
+            A rough prototype, a sketch, a model, a simple artefact — these aren't deliverables. They're thinking devices. They allow others to engage. They surface insight faster than conversation. They create shared understanding. They are <a href="https://medium.com/@mattcooperwright/b469b63d5115">Boundary Objects</a>.
           </p>
           <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-8" style={{ color: FG }}>
             I don't think the answer is to reject AI tools. I use them daily. They're here to stay.
           </p>
           <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-8" style={{ color: FG }}>
-            But I think we need to be deliberate about when we use them and how. There's a difference between using AI to accelerate the making — to iterate faster, to explore more possibilities, to test more variations — and using AI to replace the making entirely. How will you notice which mode you're in?
+            But I think we need to be deliberate about when we use them and how. There's a difference between (a) using AI to accelerate the making — to iterate faster, to explore more possibilities, to test more variations — and (b) using AI to replace the making entirely. How will you notice which mode you're in?
           </p>
         </div>
         <Glyph className="right-[-8%] top-[10%] text-[60vw] opacity-[0.07] rotate-[35deg]">↓</Glyph>
@@ -370,10 +342,10 @@ export function MakingIsThinking() {
       {/* ─── Final pull quote ─────────────────────────────────────────────── */}
       <section className="py-32 md:py-48 px-6 md:px-12 lg:px-24 relative">
         <div className="max-w-6xl relative z-10">
-          <p className="text-[12vw] md:text-[10vw] lg:text-[8rem] leading-[0.95] tracking-tighter mb-12" style={{ ...gasoek, color: FG }}>
+          <p className="text-[12vw] md:text-[10vw] lg:text-[8rem] leading-[0.95] tracking-tighter-old mb-12" style={{ ...gasoek, color: FG }}>
             Accelerating Making might extend your thinking.
           </p>
-          <p className="text-[12vw] md:text-[10vw] lg:text-[8rem] leading-[0.95] tracking-tighter" style={{ ...gasoek, color: FG }}>
+          <p className="text-[12vw] md:text-[10vw] lg:text-[8rem] leading-[0.95] tracking-tighter-old" style={{ ...gasoek, color: FG }}>
             But outsourcing the making will be the end of thinking.
           </p>
         </div>
@@ -433,7 +405,7 @@ export function MakingIsThinking() {
 
           {/* THE closing line — massive, white */}
           <h1
-            className="text-[13vw] md:text-[11vw] lg:text-[9rem] leading-[0.88] tracking-tighter"
+            className="text-[13vw] md:text-[11vw] lg:text-[9rem] leading-[0.88] tracking-tighter-old"
             style={{ ...gasoek, color: '#ffffff' }}
           >
             Which is, I suppose, the point.
