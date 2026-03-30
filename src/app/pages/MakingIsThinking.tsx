@@ -31,7 +31,7 @@ import { useEffect, useState } from 'react';
 
 const FONTS = `
   @import url('https://fonts.cdnfonts.com/css/gasoek-one');
-  @import url('https://fonts.cdnfonts.com/css/sofia-sans');
+  @import url('https://fonts.cdnfonts.com/css/rethink-sans');
 `;
 
 const BG   = '#F7F7F2';
@@ -101,7 +101,7 @@ export function MakingIsThinking() {
   return (
     <div
       className="min-h-screen"
-      style={{ backgroundColor: BG, color: FG, fontFamily: 'Sofia Sans, sans-serif', fontWeight: 300 }}
+      style={{ backgroundColor: BG, color: FG, fontFamily: 'Rethink Sans, sans-serif', fontWeight: 300 }}
     >
       {/* Self-contained font injection */}
       <style>{FONTS}</style>
