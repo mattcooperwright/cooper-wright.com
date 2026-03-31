@@ -13,7 +13,7 @@ import React from "react";
 // ─── Tokens ──────────────────────────────────────────────────────────────────
 
 const FONT_BODY = "'Plantin MT Pro', Georgia, serif";
-const FONT_SIDEBAR = "'BR Segma'’', 'Plantin MT Pro', Georgia, serif";
+const FONT_SIDEBAR = "’BR Segma’, ‘Plantin MT Pro’, Georgia, serif";
 const COLOR = "#1a1a1a";
 
 const s = {
@@ -255,8 +255,7 @@ export default function Article() {
       </Narrow>
 
       {/* ── Closing ── */}
-      <Wide>
-      <Body>What is the next organisational experiment you will design and run to probe the system and identify emerging best practice? <Img label="illustration-6" /></body></Wide>
+      <PullQuote>What is the next organisational experiment you will design and run to probe the system and identify emerging best practice? <Img label="illustration-6" /></PullQuote>
 
       <div className="py-20" />
     </div>
