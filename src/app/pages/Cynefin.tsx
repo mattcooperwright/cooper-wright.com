@@ -118,7 +118,7 @@ export default function Article() {
     <div className="min-h-screen" style={{ backgroundColor: "#fff", color: COLOR, fontFamily: FONT_BODY, fontWeight: 400, fontStyle: "normal" }}>
 
       {/* ── Header ── */}
-      <Wide><div className="pt-20 pb-12"><Title>Where Emergence Becomes Practice: Using Cynefin to think more clearly about leadership, change, and the value of design.</Title></div></Wide>
+      <Wide><div className="pt-20 pb-12"><Title>Where Emergence Becomes Practice: Using Cynefin to think more clearly about leadership 🚀, change, and the value of design.</Title></div></Wide>
       
 
       <Divider />
