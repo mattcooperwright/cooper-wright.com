@@ -124,12 +124,11 @@ export default function Article() {
       <Divider />
 
       {/* ── Opening ── */}
-      <PullQuote>It’s hard to achieve excellence when everything is constantly changing.</PullQuote>
-
-      <PullQuote>But this isn’t because you’ve changed. <Img label="illustration-1" /> There is a different way to look at this challenge, a systems thinking view.</PullQuote>
 
       <Narrow>
         <Sidebar side="right" topOffset="0px"><p>About the author — [placeholder]</p></Sidebar>
+        <Body>It’s hard to achieve excellence when everything is constantly changing.</Body>
+        <Body>But this isn’t because you’ve changed. <Img label="illustration-1" /> There is a different way to look at this challenge, a systems thinking view.</Body>
         <Body>You haven’t changed — and that is a bit of a problem. The context around us all is changing, and if you came up as a leader in the last 10 years there is a good chance that you learned leadership from the generation of Leaders before that.</Body>
         <Sidebar side="left" topOffset="20px"><p>Pattern observed — current-generation leaders are not equipped for the pace of today.</p></Sidebar>
         <Body>In discussion with People Leaders in global companies I’ve seen the same patterns, the current generation of leaders are not equipped for the pace of today. A visionary leader in a Pharma company came to IDEO for ways to unblock slow decision making, and to change the culture of perfectionism that made people spend too long on details that were moving fast.</Body>
@@ -141,11 +140,9 @@ export default function Article() {
       <Divider />
 
       {/* ── Section 2: Complexity ── */}
-      <Wide><Title>When Constant Change Is a Sign of Complexity</Title></Wide>
+      <Wide><Title><Img label="cynefin-diagram" /> There is a framework I keep returning to when I’m trying to make sense of this. It was developed by Dave Snowden and is called Cynefin.</Title></Wide>
 
-      <PullQuote><Img label="cynefin-diagram" /> There is a framework I keep returning to when I’m trying to make sense of this. It was developed by Dave Snowden and is called Cynefin.</PullQuote>
-
-      <Wide>
+      <Narrow>
         <Sidebar side="left" topOffset="0px"><p>Read the original — HBR, 2007, "A Leader’s Framework for Decision Making"</p></Sidebar>
         <Body>I am not going to attempt a full explanation here, and I would encourage anyone who wants the depth to go directly to Snowden’s writing. But the core distinction that matters for this article is between two adjacent domains: complicated and complex.</Body>
         <Body>Complicated problems are hard. They require expertise, analysis, rigorous thinking. But crucially, the relationship between cause and effect is knowable. With the right people and enough careful work, you can understand what is going on and develop a reliable response. Engineering, surgery, financial modelling — these are complicated. They reward expertise and process.</Body>
@@ -154,7 +151,7 @@ export default function Article() {
         <Body>Most organisations are built to manage the complicated. Their governance structures, their planning cycles, their performance frameworks — all of these assume that with enough expertise and rigour, you can predict and control outcomes. That assumption works in stable conditions. It starts to fail when the context becomes genuinely complex.</Body>
         <Sidebar side="right" topOffset="0px"><p>Fragmenting expectations. Restructuring technologies. Redefined landscapes.</p></Sidebar>
         <Body>And right now, for most organisations, a lot of the important problems are complex. Customer expectations are not just shifting; they are fragmenting. Technologies are not just advancing; they are restructuring whole categories of work. Competitive landscapes are not just changing; they are being redefined by players who did not previously exist. This is not noise. This is not poor execution. This is complexity.</Body>
-      </Wide>
+      </Narrow>
 
       <Wide>
         <Body>The mistake is treating today like a complicated system — applying more analysis, more rigour, more planning — and then feeling confused when the outcomes remain unpredictable. <Img label="illustration-2" /> Complexity is not a failure of leadership. It is a condition that demands a different kind of leadership.</Body>
@@ -168,7 +165,8 @@ export default function Article() {
       <Narrow>
         <Body>This is where I think design leadership has something genuinely important to contribute. Not design as execution support — the team that makes things look good and feel usable. Design as a leadership practice. A way of operating.</Body>
         <Body>Design leaders tend to have capabilities that become more valuable, not less, as certainty decreases. Three of them are worth naming directly.</Body>
-        <SubTitle>First, create conditions for emergence. <Img label="illustration-3" /> In complex environments, not every important thing can be specified up front.</SubTitle>
+        <SubTitle>First, create conditions for emergence. <Img label="illustration-3" /></SubTitle>
+        <Body>In complex environments, not every important thing can be specified up front.</Body>
       </Narrow>
 
       <Narrow>
@@ -181,7 +179,8 @@ export default function Article() {
         <Body>This sounds obvious but sits in direct tension with how most organisations reward leaders. Confidence is valued. Commitment signals credibility. Changing your mind can look like weakness. These norms make sense in complicated domains where expertise justifies certainty. In complex ones, they become liabilities.</Body>
         <Body>Design leaders can model a different relationship with uncertainty. Not performative vulnerability, but disciplined learning. Setting a clear intent, running a fast experiment, reading the signal honestly, and adjusting. Again and again. The pace of this loop matters more than the quality of the initial plan.</Body>
         <Callout title="The experiment mindset">There is a useful distinction between a plan and a probe. A plan assumes you know enough to specify the path. A probe assumes you don’t — and tries to find out quickly. In complicated conditions, plans are powerful. In complex ones, probes are safer. The challenge for most organisations is that their approval processes, budgeting cycles, and success metrics are built for plans. Helping senior stakeholders understand when a probe is the more rigorous choice — not the less rigorous one — is one of the most valuable things a design leader can do.</Callout>
-        <Body>Third, lead through sensemaking. <Img label="illustration-4" /> In complex conditions, people do not just need direction. They need help making sense of what is happening.</Body>
+        <SubTitle>Third, lead through sensemaking.</SubTitle> 
+        <Body>In complex conditions, people do not just need direction. They need help making sense of what is happening.</Body>
       </Narrow>
 
 
@@ -220,7 +219,7 @@ export default function Article() {
       <Wide><Title>I will to end on something practical. These are not prescriptions, they are experiments. Ways of operating that are worth trying, especially if the conditions you are working in feel complex.</Title></Wide>
 
       <Narrow>
-        <Body>I want to end on something practical. These are not prescriptions — they are experiments. Ways of operating that are worth trying, especially if the conditions you are working in feel genuinely complex.</Body>
+       
 
         <SubTitle>1. Rituals That Surface Learning</SubTitle>
         <Body>Most team rituals are designed to surface status. Stand-ups, sprint reviews, project check-ins — they answer the question where are we? That is useful. But in complex conditions, there is a more valuable question: what are we learning?</Body>
@@ -255,7 +254,9 @@ export default function Article() {
       </Narrow>
 
       {/* ── Closing ── */}
-      <PullQuote>What is the next organisational experiment you will design and run to probe the system and identify emerging best practice? <Img label="illustration-6" /></PullQuote>
+      <Wide>
+      <Title>What is the next organisational experiment you will design and run to probe the system and identify emerging best practice? <Img label="illustration-6" />
+      </Title></Wide>
 
       <div className="py-20" />
     </div>
