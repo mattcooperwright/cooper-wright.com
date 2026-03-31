@@ -4,6 +4,7 @@ import { GeometricShape } from './components/GeometricShape';
 import { Menu } from './components/Menu';
 import { IAmSittingInARoom } from './pages/IAmSittingInARoom';
 import { MakingIsThinking } from './pages/MakingIsThinking';
+import Cynefin from './pages/Cynefin';
 import '../styles/home-page.css';
 
 interface Shape {
@@ -100,6 +101,9 @@ export default function App() {
 
         {/* Making is Thinking – integrated from subfolder */}
         <Route path="/making-is-thinking" element={<MakingIsThinking />} />
+
+        {/* Cynefin – article on design leadership */}
+        <Route path="/cynefin-for-designers" element={<Cynefin />} />
 
         {/* 404 catch-all */}
         <Route path="*" element={<HomePage />} />
