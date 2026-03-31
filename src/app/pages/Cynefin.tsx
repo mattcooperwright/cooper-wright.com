@@ -4,8 +4,8 @@
  * Dependencies: React, Tailwind CSS v4
  *
  * Add these font imports to your global CSS:
- *   @import url('https://fonts.cdnfonts.com/css/plantin-mt-pro');
- *   @import url('https://fonts.cdnfonts.com/css/br-segma');
+ *   @import url(’https://fonts.cdnfonts.com/css/plantin-mt-pro’);
+ *   @import url(’https://fonts.cdnfonts.com/css/br-segma’);
  */
 
 import React from "react";
@@ -13,7 +13,7 @@ import React from "react";
 // ─── Tokens ──────────────────────────────────────────────────────────────────
 
 const FONT_BODY = "'Plantin MT Pro', Georgia, serif";
-const FONT_SIDEBAR = "'BR Segma', 'Plantin MT Pro', Georgia, serif";
+const FONT_SIDEBAR = "'BR Segma'’', 'Plantin MT Pro', Georgia, serif";
 const COLOR = "#1a1a1a";
 
 const s = {
@@ -118,21 +118,21 @@ export default function Article() {
     <div className="min-h-screen" style={{ backgroundColor: "#fff", color: COLOR, fontFamily: FONT_BODY, fontWeight: 400, fontStyle: "normal" }}>
 
       {/* ── Header ── */}
-      <Wide><div className="pt-20 pb-12"><Title>Where Emergence Becomes Practice</Title></div></Wide>
-      <Narrow><Body>Using Cynefin to think more clearly about leadership, change, and the value of design</Body></Narrow>
+      <Wide><div className="pt-20 pb-12"><Title>Where Emergence Becomes Practice: Using Cynefin to think more clearly about leadership, change, and the value of design.</Title></div></Wide>
+      
 
       <Divider />
 
       {/* ── Opening ── */}
-      <PullQuote>It's hard to achieve excellence when everything is constantly changing.</PullQuote>
+      <PullQuote>It’s hard to achieve excellence when everything is constantly changing.</PullQuote>
 
-      <PullQuote>But this isn't because you've changed. <Img label="illustration-1" /> There is a different way to look at this challenge, a systems thinking view.</PullQuote>
+      <PullQuote>But this isn’t because you’ve changed. <Img label="illustration-1" /> There is a different way to look at this challenge, a systems thinking view.</PullQuote>
 
       <Narrow>
         <Sidebar side="right" topOffset="0px"><p>About the author — [placeholder]</p></Sidebar>
-        <Body>You haven't changed — and that is a bit of a problem. The context around us all is changing, and if you came up as a leader in the last 10 years there is a good chance that you learned leadership from the generation of Leaders before that.</Body>
+        <Body>You haven’t changed — and that is a bit of a problem. The context around us all is changing, and if you came up as a leader in the last 10 years there is a good chance that you learned leadership from the generation of Leaders before that.</Body>
         <Sidebar side="left" topOffset="20px"><p>Pattern observed — current-generation leaders are not equipped for the pace of today.</p></Sidebar>
-        <Body>In discussion with People Leaders in global companies I've seen the same patterns, the current generation of leaders are not equipped for the pace of today. A visionary leader in a Pharma company came to IDEO for ways to unblock slow decision making, and to change the culture of perfectionism that made people spend too long on details that were moving fast.</Body>
+        <Body>In discussion with People Leaders in global companies I’ve seen the same patterns, the current generation of leaders are not equipped for the pace of today. A visionary leader in a Pharma company came to IDEO for ways to unblock slow decision making, and to change the culture of perfectionism that made people spend too long on details that were moving fast.</Body>
         <Body>Perhaps as a Designer you see Strategies get agreed and then quietly set aside as priorities shift. You watch as teams reach alignment and then fragment when the context changes around them. Work that was excellent six months ago is hard to recreate, not because quality dropped, but because the ground moved. Everything feels harder, and the more you impose on the situation the tougher it gets.</Body>
         <Sidebar side="right" topOffset="0px"><p>Not a failure of execution — a mismatch between approach and conditions.</p></Sidebar>
         <Body>I want to offer a reframe. Because I think what many leaders are experiencing is not primarily a failure of execution. It is a mismatch between the leadership approach they have and the conditions they are actually operating in. Designers will love this.</Body>
@@ -143,32 +143,33 @@ export default function Article() {
       {/* ── Section 2: Complexity ── */}
       <Wide><Title>When Constant Change Is a Sign of Complexity</Title></Wide>
 
-      <PullQuote><Img label="cynefin-diagram" /> There is a framework I keep returning to when I'm trying to make sense of this. It was developed by Dave Snowden and is called Cynefin.</PullQuote>
+      <PullQuote><Img label="cynefin-diagram" /> There is a framework I keep returning to when I’m trying to make sense of this. It was developed by Dave Snowden and is called Cynefin.</PullQuote>
 
-      <Narrow>
-        <Sidebar side="left" topOffset="0px"><p>Read the original — HBR, 2007, "A Leader's Framework for Decision Making"</p></Sidebar>
-        <Body>I am not going to attempt a full explanation here, and I would encourage anyone who wants the depth to go directly to Snowden's writing. But the core distinction that matters for this article is between two adjacent domains: complicated and complex.</Body>
+      <Wide>
+        <Sidebar side="left" topOffset="0px"><p>Read the original — HBR, 2007, "A Leader’s Framework for Decision Making"</p></Sidebar>
+        <Body>I am not going to attempt a full explanation here, and I would encourage anyone who wants the depth to go directly to Snowden’s writing. But the core distinction that matters for this article is between two adjacent domains: complicated and complex.</Body>
         <Body>Complicated problems are hard. They require expertise, analysis, rigorous thinking. But crucially, the relationship between cause and effect is knowable. With the right people and enough careful work, you can understand what is going on and develop a reliable response. Engineering, surgery, financial modelling — these are complicated. They reward expertise and process.</Body>
         <Body>Complex problems are different in kind, not just in degree. In complex systems, cause and effect are only legible in retrospect. The system contains too many interacting variables, human behaviours, and feedback loops for anyone to predict reliably what will happen next. You cannot analyse your way to certainty upfront. You can only act, observe, and learn.</Body>
         <Callout title="What is Cynefin?">Cynefin (pronounced "kuh-NEV-in") is a Welsh word meaning "habitat" or "place of belonging." The framework, developed by Dave Snowden, maps five domains: Clear, Complicated, Complex, Chaotic, and Confused. Each domain calls for a different leadership response. The most consequential distinction for design leaders is between Complicated (cause and effect are knowable; expertise helps) and Complex (cause and effect only emerge through action; learning is the mechanism). Most organisations are built to handle complicated. Most of their real problems are complex.</Callout>
         <Body>Most organisations are built to manage the complicated. Their governance structures, their planning cycles, their performance frameworks — all of these assume that with enough expertise and rigour, you can predict and control outcomes. That assumption works in stable conditions. It starts to fail when the context becomes genuinely complex.</Body>
         <Sidebar side="right" topOffset="0px"><p>Fragmenting expectations. Restructuring technologies. Redefined landscapes.</p></Sidebar>
         <Body>And right now, for most organisations, a lot of the important problems are complex. Customer expectations are not just shifting; they are fragmenting. Technologies are not just advancing; they are restructuring whole categories of work. Competitive landscapes are not just changing; they are being redefined by players who did not previously exist. This is not noise. This is not poor execution. This is complexity.</Body>
-      </Narrow>
+      </Wide>
 
-      <PullQuote>The mistake is treating today like a complicated system — applying more analysis, more rigour, more planning — and then feeling confused when the outcomes remain unpredictable. <Img label="illustration-2" /> Complexity is not a failure of leadership. It is a condition that demands a different kind of leadership.</PullQuote>
+      <Wide>
+        <Body>The mistake is treating today like a complicated system — applying more analysis, more rigour, more planning — and then feeling confused when the outcomes remain unpredictable. <Img label="illustration-2" /> Complexity is not a failure of leadership. It is a condition that demands a different kind of leadership.</Body>
+    </Wide>
 
       <Divider />
 
       {/* ── Section 3: Design Leadership ── */}
-      <Wide><Title>What Do Design Leaders Do When Certainty Disappears?</Title></Wide>
+      <Narrow><Body>What Do Design Leaders Do When Certainty Disappears?</Body></Narrow>
 
       <Narrow>
         <Body>This is where I think design leadership has something genuinely important to contribute. Not design as execution support — the team that makes things look good and feel usable. Design as a leadership practice. A way of operating.</Body>
         <Body>Design leaders tend to have capabilities that become more valuable, not less, as certainty decreases. Three of them are worth naming directly.</Body>
+        <SubTitle>First, create conditions for emergence. <Img label="illustration-3" /> In complex environments, not every important thing can be specified up front.</SubTitle>
       </Narrow>
-
-      <PullQuote>First, create conditions for emergence. <Img label="illustration-3" /> In complex environments, not every important thing can be specified up front.</PullQuote>
 
       <Narrow>
         <Sidebar side="left" topOffset="0px"><p>Making things legible enough to act on without making them rigid enough to break.</p></Sidebar>
@@ -179,10 +180,10 @@ export default function Article() {
         <Sidebar side="right" topOffset="0px"><p>The pace of the learning loop matters more than the quality of the initial plan.</p></Sidebar>
         <Body>This sounds obvious but sits in direct tension with how most organisations reward leaders. Confidence is valued. Commitment signals credibility. Changing your mind can look like weakness. These norms make sense in complicated domains where expertise justifies certainty. In complex ones, they become liabilities.</Body>
         <Body>Design leaders can model a different relationship with uncertainty. Not performative vulnerability, but disciplined learning. Setting a clear intent, running a fast experiment, reading the signal honestly, and adjusting. Again and again. The pace of this loop matters more than the quality of the initial plan.</Body>
-        <Callout title="The experiment mindset">There is a useful distinction between a plan and a probe. A plan assumes you know enough to specify the path. A probe assumes you don't — and tries to find out quickly. In complicated conditions, plans are powerful. In complex ones, probes are safer. The challenge for most organisations is that their approval processes, budgeting cycles, and success metrics are built for plans. Helping senior stakeholders understand when a probe is the more rigorous choice — not the less rigorous one — is one of the most valuable things a design leader can do.</Callout>
+        <Callout title="The experiment mindset">There is a useful distinction between a plan and a probe. A plan assumes you know enough to specify the path. A probe assumes you don’t — and tries to find out quickly. In complicated conditions, plans are powerful. In complex ones, probes are safer. The challenge for most organisations is that their approval processes, budgeting cycles, and success metrics are built for plans. Helping senior stakeholders understand when a probe is the more rigorous choice — not the less rigorous one — is one of the most valuable things a design leader can do.</Callout>
+        <Body>Third, lead through sensemaking. <Img label="illustration-4" /> In complex conditions, people do not just need direction. They need help making sense of what is happening.</Body>
       </Narrow>
 
-      <PullQuote>Third, lead through sensemaking. <Img label="illustration-4" /> In complex conditions, people do not just need direction. They need help making sense of what is happening.</PullQuote>
 
       <Narrow>
         <Body>When signals are ambiguous and patterns are still forming, teams can become anxious or fragmented — not because they lack capability, but because they lack an interpretive framework. They do not know what to make of what they are observing.</Body>
@@ -194,20 +195,20 @@ export default function Article() {
       <Divider />
 
       {/* ── Section 4: Liminal Zone ── */}
-      <Wide><Title>The Liminal Zone Where Emergence Becomes Practice</Title></Wide>
+      <Wide><Title>There is a specific space I want to name — one that I think is the most interesting and least discussed territory for design leadership. It sits at the boundary between complex and complicated. The Liminal Zone Where Emergence Becomes Practice</Title></Wide>
 
       <Narrow>
-        <Body>There is a specific space I want to name — one that I think is the most interesting and least discussed territory for design leadership. It sits at the boundary between complex and complicated.</Body>
         <Sidebar side="right" topOffset="0px"><p>The threshold between complex and complicated where emergent practice becomes codified.</p></Sidebar>
         <Body>Here is how it works. In complex conditions, you probe and learn. Over time, if you are paying attention, patterns start to become legible. What was once uncertain starts to have a recognisable shape. Cause and effect, invisible at the start, begin to reveal themselves through accumulated experience.</Body>
         <Body>At that point, something important becomes possible. The learning can be translated. Emergent practice — the rough, contingent, intuitive ways of doing things that developed in the heat of complexity — can begin to become codified practice. Frameworks. Principles. Methods. Rituals. Systems. Things that can be taught, shared, and scaled.</Body>
+        <Body>This is the liminal zone. <Img label="illustration-5" /> The threshold between complex and complicated. And strategic design is, I think, uniquely strong at helping organisations cross it.</Body>
       </Narrow>
 
-      <PullQuote>This is the liminal zone. <Img label="illustration-5" /> The threshold between complex and complicated. And strategic design is, I think, uniquely strong at helping organisations cross it.</PullQuote>
+      
 
       <Narrow>
-        <Callout title="Emergent vs. Codified Practice">Emergent practice is what teams develop under pressure when rules don't yet exist. It is often tacit — people know how to do it but cannot easily explain why. Codified practice is what happens when that tacit knowledge gets surfaced, examined, and translated into something teachable and repeatable. Most organisations struggle to make this translation. They either leave emergent practice invisible (so it disappears when people leave) or they codify too early, before patterns are stable enough to generalise. Design leaders, who are trained to make the implicit explicit and the invisible visible, are well-placed to manage this threshold.</Callout>
-        <Body>The translation is not automatic. Emergent practices are often tacit — they live in people's heads and habits, not in documents. They can be fragile, context-dependent, difficult to articulate. Turning them into durable organisational capability requires someone who can observe carefully, ask the right questions, hold the nuance, and craft something that is generalisable without losing what made the original practice work.</Body>
+        <Callout title="Emergent vs. Codified Practice">Emergent practice is what teams develop under pressure when rules don’t yet exist. It is often tacit — people know how to do it but cannot easily explain why. Codified practice is what happens when that tacit knowledge gets surfaced, examined, and translated into something teachable and repeatable. Most organisations struggle to make this translation. They either leave emergent practice invisible (so it disappears when people leave) or they codify too early, before patterns are stable enough to generalise. Design leaders, who are trained to make the implicit explicit and the invisible visible, are well-placed to manage this threshold.</Callout>
+        <Body>The translation is not automatic. Emergent practices are often tacit — they live in people’s heads and habits, not in documents. They can be fragile, context-dependent, difficult to articulate. Turning them into durable organisational capability requires someone who can observe carefully, ask the right questions, hold the nuance, and craft something that is generalisable without losing what made the original practice work.</Body>
         <Sidebar side="left" topOffset="0px"><p>Turning emergent practice into durable organisational capability.</p></Sidebar>
         <Body>That is a design problem. And it is one of the most valuable things strategic design can do for an organisation navigating complexity.</Body>
         <Body>Strategic design helps organisations move knowledge from emergence into usable practice. Not just generating good ideas in workshops, but building the institutional capability to keep learning, keep translating, and keep operating well even as conditions continue to shift.</Body>
@@ -216,7 +217,7 @@ export default function Article() {
       <Divider />
 
       {/* ── Section 5: Experiments ── */}
-      <Wide><Title>Three Experiments for Leading Through Complexity</Title></Wide>
+      <Wide><Title>I will to end on something practical. These are not prescriptions, they are experiments. Ways of operating that are worth trying, especially if the conditions you are working in feel complex.</Title></Wide>
 
       <Narrow>
         <Body>I want to end on something practical. These are not prescriptions — they are experiments. Ways of operating that are worth trying, especially if the conditions you are working in feel genuinely complex.</Body>
@@ -243,7 +244,7 @@ export default function Article() {
         <Body>In complex environments, systems should often be trialled before they are standardised. This is not timidity. It is rigour — applied to the right problem.</Body>
 
         <SubTitle>3. Empathy Needs to Travel Upwards</SubTitle>
-        <Body>Design has a strong tradition of empathy. We are trained to understand the people we are designing for — their needs, their contexts, their mental models. That instinct is one of design's genuine strengths.</Body>
+        <Body>Design has a strong tradition of empathy. We are trained to understand the people we are designing for — their needs, their contexts, their mental models. That instinct is one of design’s genuine strengths.</Body>
         <Sidebar side="right" topOffset="0px"><p>Understanding what it is like to hold systemic responsibility at altitude.</p></Sidebar>
         <Body>But in most design practice, empathy travels in one direction: downward and outward. Toward users. Toward frontline workers. Toward the people closest to the problem. This is right and important.</Body>
         <Body>What gets less attention is the need for empathy to travel upwards too.</Body>
@@ -254,7 +255,8 @@ export default function Article() {
       </Narrow>
 
       {/* ── Closing ── */}
-      <PullQuote>What is the next organisational experiment you will design and run to probe the system and identify emerging best practice? <Img label="illustration-6" /></PullQuote>
+      <Wide>
+      <Body>What is the next organisational experiment you will design and run to probe the system and identify emerging best practice? <Img label="illustration-6" /></body></Wide>
 
       <div className="py-20" />
     </div>
