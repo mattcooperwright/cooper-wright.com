@@ -143,6 +143,59 @@ All three PRs reused the same branch name. The commit messages ("Claude Save me"
 
 The `b854bce5` syntax fix is the clearest cost of this setup: with no type-check, lint or CI, a broken page reached `main` and was only caught afterwards.
 
+## 7. Secrets and confidential-content scan (full history)
+
+Scope: every commit on every branch (`main`, `claude/infallible-bartik`, `claude/repository-audit-kojgrf`), 37 commits including this audit. That covers 152 unique project file versions, 40,031 unique `node_modules` file versions, and the contents of two zip archives that were committed and later deleted. No secret values are reproduced here.
+
+### Method
+
+- **File names.** Every path that has ever existed in history was checked for `.env*`, `*.pem`, `*.key`, `*.p12`, `*.pfx`, `id_rsa`/`id_ed25519`, `*.keystore`, `.npmrc`, `.netrc`, `.vercel/`, and names containing `credentials`, `secret` or `service-account`. The same check ran on the file lists inside both zips.
+- **File contents.** Every blob was matched against patterns for private key blocks, AWS access key IDs, GitHub, Slack, Stripe, npm, Vercel and Figma tokens, Google API keys, OpenAI and Anthropic keys, JWTs, URLs with embedded credentials, and generic `api_key / secret / token / password = "..."` assignments. Zip members were extracted in memory and scanned the same way. A keyword search (`password`, `secret`, `api key`, `token`, `bearer`, `authorization`) was run separately over project files on every commit.
+- **Names.** Commit subjects and bodies were read in full. Page text in every historical version of every `.tsx`, `.md` and `.html` file (excluding shadcn components and Figma boilerplate) was reduced to its capitalised terms and reviewed by hand, with hits read in context.
+- **Metadata.** All committed `.DS_Store` files were decoded for the file and folder names they record. Email and phone-number patterns were searched across project files.
+
+### Results: secrets
+
+| Check | Finding |
+|---|---|
+| `.env` or key files ever committed | None. The only path match is `node_modules/prop-types/lib/ReactPropTypesSecret.js`, a React library file whose name contains "Secret"; it holds no credential. |
+| API keys, tokens, private keys (project files) | None |
+| API keys, tokens, private keys (`node_modules`) | None |
+| Inside `Personal One Page Website.zip` (added `37075ec0`, deleted `b4da7038`) | None. 15 Figma Make files plus shadcn components; no env or key files. |
+| Inside `One Page Website Design.zip` (added `b8562bcc`, deleted `1dbed495`) | None. Same structure as above. |
+| Keyword search | Only false positives: the word "tokens" in `guidelines/Guidelines.md:26` (template prose) and a `// Tokens` comment heading in `src/app/pages/Cynefin.tsx:13` (design tokens). |
+| `.DS_Store` contents | Only project folder names (`src`, `guidelines`, `sitting-in-a-room`, `making-is-thinking`, `Making is thinking`, `One Page Website Design`, `Personal One Page Website`, `infallible-bartik`). No personal paths, usernames or unrelated file names. |
+| Emails and phone numbers in files | None in project files. The only matches for phone-like patterns are SVG path data. The author email in commit metadata is a work address (see below). |
+
+Because nothing was found, no credential needs rotating and no history rewrite is needed on secrets grounds.
+
+### Results: client and confidential names
+
+No client is named anywhere in page text, file names or commit messages. Two passages describe client work in anonymised form and are published on the live site:
+
+| File | Introduced in | Type | Detail |
+|---|---|---|---|
+| `src/app/pages/Cynefin.tsx:134` | `2b840eaf` on `main` (2026-03-31); also `bbccf3f4` on `claude/infallible-bartik` | Anonymised client engagement | Describes "a visionary leader in a Pharma company" who "came to IDEO" about slow decision making and a culture of perfectionism. Industry and the nature of the problem are disclosed; the company is not named. |
+| `src/app/pages/MakingIsThinking.tsx:251` | `6a645e6f` and `6c4575ef` (2026-03-27); also in the deleted `making-is-thinking/` folder and `making-is-thinking/src/imports/making-is-thinking.md` | Anonymised project description | Describes "a team working on the future of commercial vehicles" exploring in-vehicle experiences, and names the tool used (Flora.ai). The client is not named. |
+
+Both read as deliberate, publishable case-study language. Whether the sector-level detail is cleared for publication under the relevant client agreements is a judgement for the author, not something this scan can decide. If either engagement is under a strict NDA, the industry plus project-topic combination may be enough to identify the client to someone in that sector.
+
+Other names found, none of them confidential:
+
+- **IDEO** (employer) appears on the home page (`src/app/App.tsx:78`) and in page prose ("At IDEO", "Every project I've worked on at IDEO").
+- **Third-party products and published sources**: Claude, ChatGPT, Flora.ai, Figma Make, Dave Snowden and the 2007 HBR article on Cynefin, the composer Lucier (referenced on the Sitting in a Room page), and two Medium articles linked from `MakingIsThinking.tsx`.
+- **Commit messages** contain no client, project or person names. The most specific are the PR branch name `claude/infallible-bartik` and the folder names above.
+
+### Results: personal data in git metadata
+
+Every commit carries the author identity `Matt Cooper-Wright <mcooper@ideo.com>`, a work address. The repository is **private** on GitHub, so this is visible only to people with repo access. It would become public if the repo were ever made public. This audit file also repeats the address in section 6.
+
+### Not covered
+
+- Secrets stored outside git: the Vercel project's environment variables, GitHub Actions secrets (none are referenced), and local `.env` files that were never committed.
+- Images and binary assets other than the two zips (there are none in project history apart from `.DS_Store`).
+- Minified bundles in `dist/` were included in the pattern scan but cannot be reviewed for names by hand; they are built from the same source files reviewed above.
+
 ## Summary of gaps
 
 In rough order of how much they matter:
@@ -153,3 +206,4 @@ In rough order of how much they matter:
 4. Pages are listed in two places (`App.tsx`, `Menu.tsx`) with nothing keeping them aligned. The menu has a dead `/contact.html` link, and `src/app/routes.tsx` is unused.
 5. Most dependencies, and the whole `components/ui/` folder, are unused Figma Make scaffolding. React is only a peer dependency.
 6. Fonts load from a third-party mirror, including commercial faces.
+7. No secrets in history. Two anonymised client references (a pharma company, a commercial-vehicles project) are published on live pages and should be confirmed as cleared.
